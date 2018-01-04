@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4e3ea0a4-bde3-4978-a812-c06eb6d76f46" name="artig" url="http://artig.caseyjohnson1989.com">
+        <fileTransfer host="artig.caseyjohnson1989.com" port="21" rootFolder="/artig.caseyjohnson1989.com">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

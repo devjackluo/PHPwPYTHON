@@ -1,0 +1,44 @@
+@media (max-width:767px)
+{
+    body {
+
+        padding-top: 20px;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: #fff;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+    body{
+
+    }
+}
+
+.navbar-default{
+    background-color: #293342;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+.setNavBarHeight{
+    height: 50px;
+}
+
+main{
+    margin-top: 60px;
+
+}
+
+.fancyHeader{
+    text-align: center;
+}
+
+
+
+
+
+
