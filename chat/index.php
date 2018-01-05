@@ -22,7 +22,30 @@ if(isset($_POST['enter'])){
         echo '<span class="error">Please type in a name</span>';
     }
 }
+
+
 ?>
+
+
+
+<?php
+
+if(isset($_GET['logout'])){
+
+    //Simple exit message
+    $fp = fopen("log.html", 'a');
+    fwrite($fp, "<div class='msgln'><i>User " . $_SESSION['name'] . " has left the chat session.</i><br></div>");
+    fclose($fp);
+
+    session_destroy();
+    //header("Location: index.php");
+
+}
+
+
+
+?>
+
 
 
 
@@ -38,14 +61,12 @@ if(isset($_POST['enter'])){
 
 
 
-
-
-
-
 <?php
+
 if(!isset($_SESSION['name'])){
     loginForm();
 }
+
 else{
     ?>
 
@@ -126,7 +147,7 @@ else{
             });
         }
 
-        setInterval (loadLog, 2500);
+        setInterval (loadLog, 500);
 
 
     </script>
@@ -140,19 +161,7 @@ else{
 </html>
 
 
-<?php
 
-if(isset($_GET['logout'])){
 
-    //Simple exit message
-    $fp = fopen("log.html", 'a');
-    fwrite($fp, "<div class='msgln'><i>User " . $_SESSION['name'] . " has left the chat session.</i><br></div>");
-    fclose($fp);
 
-    session_destroy();
-    header('Location: http://artig.caseyjohnson1989.com');
-
-}
-
-?>
 
